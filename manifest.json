@@ -1,9 +1,11 @@
 {
     "manifest_version": 2,
 
-    "name": "FindTab",
-    "description": "This extension finds tabs that contain specific textual content",
-    "version": "1.0",
+    "name": "TabFind",
+    "shortname": "TabFind",
+    "description": "Search all open tabs for specific text",
+    "version": "0.2.1",
+    "author": "Peter Mares",
 
     "icons": {
         "16": "icon16.png",

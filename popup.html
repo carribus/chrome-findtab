@@ -3,11 +3,17 @@
 <head>
     <title>FindTab Search Popup</title>
     <style>
+        html {
+            height: 400px;
+            width: 500px;
+        }
         body {
-            margin: 0;
-            margin-left: 10px;
-            min-width: 400px;
+            margin: 0 5px 0 5px;
+            width: 500px;
             font-size: 15px;
+            height: 400px;
+            overflow: hidden;
+            font-family: Lucida Grande;
         }
 
         h3 {
@@ -18,11 +24,29 @@
             float: left;
         }
 
-        div {
-            padding-top: 0px;
-            margin-top: 0px;
-            height: 20px;
-            margin-bottom: 20px;
+        div.searchArea {
+            padding-top: 5px;
+            height: 40px;
+            border-bottom: 1px solid dimgray;
+            overflow: hidden;
+        }
+
+        div#searchResults {
+            height: 100%;
+            overflow-y: auto;
+            font-size: 11px;
+        }
+
+        div.result {
+            clear: both;
+            padding: 10px 0 10px 0;
+            border-bottom: solid 1px darkgrey;
+        }
+
+        img.favicon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
         }
 
         p {
@@ -50,10 +74,13 @@
 </head>
 <body>
     <h3>FindTab</h3>
-    <div>
+    <div class="searchArea">
         <img src="fticon.png" />
         <input type="text" id="searchFor"/>
         <button id="searchButton">Search</button>
+    </div>
+    <div id="searchResults">
+
     </div>
 </body>
 </html>

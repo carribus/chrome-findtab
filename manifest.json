@@ -5,6 +5,11 @@
     "description": "This extension finds tabs that contain specific textual content",
     "version": "1.0",
 
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
     "permissions": [
         "http://*/",
         "https://*/",
@@ -12,7 +17,7 @@
         "contextMenus"
     ],
     "browser_action": {
-        "default_icon": "icon.png",
+        "default_icon": "fticon.png",
         "default_popup": "popup.html"
     },
     "commands": {

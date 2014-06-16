@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>FindTab Results: {{searchText}}</title>
+    <script src="results.js"></script>
+    <style>
+        img {
+            margin-right: 5px;
+            width: 16px;
+            height: 16px;
+        }
+        div.results {
+        }
+        div.result {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: 40px;
+            border-bottom: solid 1px black;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Tabs containing &quot;{{searchText}}&quot;</h1>
+    <div id="results">
+
+    </div>
+</body>
+</html>

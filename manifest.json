@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "FindTab",
+    "description": "This extension finds tabs that contain specific textual content",
+    "version": "1.0",
+
+    "permissions": [
+        "http://*/",
+        "https://*/",
+        "tabs",
+        "contextMenus"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            }
+        }
+    }
+}

@@ -3,85 +3,77 @@
 <head>
     <title>FindTab Search Popup</title>
     <style>
+        * {
+                margin: 0;
+                padding: 0;
+        }
         html {
             height: 400px;
             width: 500px;
         }
         body {
-            margin: 0 5px 0 5px;
             width: 500px;
-            font-size: 15px;
             height: 400px;
             overflow: hidden;
+            font-size: 16px;
             font-family: Lucida Grande;
         }
-
-        h3 {
-            border-bottom: solid 1px dimgray;
+        body > img {
+            position: absolute;
+            top: 30px;
+            left: 30px;
         }
-
-        img {
-            float: left;
-        }
-
-        div.searchArea {
-            padding-top: 5px;
-            height: 40px;
-            border-bottom: 1px solid dimgray;
-            overflow: hidden;
-        }
-
         div#searchResults {
             height: 100%;
+            width: 100%;
             overflow-y: auto;
-            font-size: 11px;
+            font-size: 14px;
         }
-
+        div.result:nth-child(2n+1) {
+            background-color: #efefef;
+        }
         div.result {
-            clear: both;
-            padding: 10px 0 10px 0;
-            border-bottom: solid 1px darkgrey;
+            padding: 10px 16px;
+            background-color: white;
         }
-
         img.favicon {
             width: 16px;
             height: 16px;
-            margin-right: 5px;
+            margin: 0 6px -3px 0;
         }
-
+        a {
+            color: #555;
+            text-decoration: none;
+        }
         p {
-            margin: 0px;
+            margin: 0;
             float: left;
             vertical-align: middle;
         }
 
         input[type='text'] {
             float: left;
-            margin-left: 10px;
-            width: 70%;
-            vertical-align: middle;
+            margin: 20px;
+            padding: 10px 10px 10px 40px;
+            width: 410px;
+            font-size: 16px;
+            background: transparent;
+            border-radius: 6px;
+            border: 1px solid #ccc;
         }
-
-        button {
-            float: left;
-            margin-left: 10px;
-            vertical-align: middle;
+        input[type='text']:focus {
+            border: 1px solid rgb(150, 206, 255);
+            outline: none
         }
-
     </style>
 
     <script src="popup.js" defer="true"></script>
 </head>
 <body>
-    <h3>TabFind</h3>
-    <div class="searchArea">
-        <img src="fticon.png" />
-        <input type="text" id="searchFor"/>
-        <button id="searchButton">Search</button>
-    </div>
+    <img src="fticon.png" />
+    <input type="text" placeholder="TabFind" id="searchFor"/>
     <div id="searchResults">
 
     </div>
 </body>
 </html>
-

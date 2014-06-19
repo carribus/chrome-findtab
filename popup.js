@@ -114,16 +114,8 @@ var FindTab = (function() {
 
 document.addEventListener('DOMContentLoaded', function () {
     var searchField = document.getElementById('searchFor');
-    var searchBtn = document.getElementById('searchButton') ;
 
-    searchBtn.addEventListener('click', function(e) {
-        console.log('Search clicked');
+    searchField.addEventListener('keyup', function(e) {
         FindTab.searchTabsFor(searchField.value);
-    })
-
-    searchField.addEventListener('keydown', function(e) {
-        if (e.keyCode == 13 ) {
-            searchBtn.click();
-        }
     })
 });

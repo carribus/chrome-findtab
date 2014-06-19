@@ -4,7 +4,7 @@
     "name": "TabFind",
     "shortname": "TabFind",
     "description": "Search all open tabs for specific text",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "author": "Peter Mares",
 
     "icons": {
